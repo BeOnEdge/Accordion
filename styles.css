@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.accordian {
+  max-width: 650px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.accordian:first-child {
+  background: #fdf7f0;
+  border-left: 4px solid #fac38b;
+}
+
+.accordian:nth-child(2) {
+  background: #f1f0fe;
+  border-left: 4px solid #9090eb;
+}
+
+.accordian:nth-child(3) {
+  background: #fff0f3;
+  border-left: 4px solid #ef95ac;
+}
+
+.accordian:nth-child(4) {
+  background: #eef9ff;
+  border-left: 4px solid #98d1f3;
+}
+
+.accordian_head {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
+  gap: 30px;
+}
+
+.accordian_toggler {
+  align-self: flex-start;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 26px;
+  transition: all 0.5s ease;
+}
+
+.accordian_toggler.active {
+  rotate: 133deg;
+}
+
+.accordian_title {
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.accordian_body {
+  background: transparent;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.5s ease;
+}
+
+.active_body {
+  grid-template-rows: 1fr;
+}
+
+.accordian_description {
+  background-color: transparent;
+  margin-top: 11px;
+  padding-left: 37px;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 19px;
+}
